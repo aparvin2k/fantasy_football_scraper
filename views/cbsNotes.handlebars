@@ -1,7 +1,7 @@
 <div class = "container" >
 
   <div class="jumbotron">
-  {{#each RotoworldArticles}}
+  {{#each Cbs}}
   <h2> "{{this.title}}" </h2>
   <h4><a href= "https://www.cbssports.com/fantasy/football{{this.link}}" target="_blank"> {{this.link}}</a></h4><hr>
     <button type="button" data-id="{{this._id}}" class="btn btn-warning" id="add-note" data-toggle="modal" data-target="#noteModal">Add Note</button>
