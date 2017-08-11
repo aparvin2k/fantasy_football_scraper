@@ -22,6 +22,10 @@ body {
   background: rgba(255, 255, 255, 0.9);
 }
 
+.footer a{
+  color: white;
+  font-size: 125%;
+}
 h1 {
   font-family: 'Special Elite', cursive;
 }
