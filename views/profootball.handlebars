@@ -1,0 +1,36 @@
+<div class = "container" >
+<div class="jumbotron">
+     <h1>SCRAPED Fantasy Football</h1>
+       <h3>All Recent Fantasy Football News - Add and Read Notes from Fellow Fans!</h3>
+       <a href="/scrapeRoto"> <button type="button" class="btn btn-danger scrape" > Scrape for Rotoworld </button></a>
+       <a href="/scrapeCbs"> <button type="button" class="btn btn-danger scrape" > Scrape for CBS Sports </button></a>
+       <a href="/scrapeProfootball"> <button type="button" class="btn btn-danger scrape" > Scrape for Profootball </button></a>
+       <a href="/scrapeEspn"> <button type="button" class="btn btn-danger scrape" > Scrape for Espn </button></a>
+</div>
+<div class="article-container">
+
+    {{#each Profootball}}
+  <div class="row">
+
+<div class="panel panel-primary">
+  <div class="panel-heading">{{this.title}}
+    <a href="/profootballNotes/{{this._id}}">
+    <button type="button" class="btn btn-warning save-article" >See Notes</button> </a>
+  </div>
+  <div class="panel-body">
+    <a href= "https://www.profootballfocus.com{{this.link}}" target="_blank"> {{this.link}}</a>
+  </div>
+</div>
+    </div>
+ {{/each}}
+</div>
+
+
+<!-- Footer -->
+<footer class="footer container">
+<a href="/profootball">Home</a>
+</footer>
+
+</div>
+<script>
+</script>
