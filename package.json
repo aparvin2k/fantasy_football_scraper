@@ -22,7 +22,7 @@
     "express": "^4.15.4",
     "express-handlebars": "^3.0.0",
     "method-override": "^2.3.9",
-    "mongoose": "^4.11.6",
+    "mongoose": "^5.7.6",
     "request": "^2.81.0"
   }
 }
